@@ -1,0 +1,83 @@
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+a,router-link{
+    color:@color-tip;
+    text-decoration:none;
+}
+
+// 网页设计所有风格颜色
+@color-tip: #7086ae;                // 提示文字
+@color-used: #bacef1;               // 常用字体颜色
+@color-select: #28ffd4;             //选中颜色
+@color-two-level: #526583;          //二级标题
+@color-checkout-default: #2c364a;   //默认复选框
+@color-click: #01bcfd;              // 可点击字体颜色
+@color-bg:#0b0e1a;                  //常用背景色
+@color-line:#1c2236;                //常用分界线颜色
+
+// 弹出框样式修改
+.message-box {
+    background-color: #222D41;
+    border-color: #222D41;
+    
+    .el-message-box__content {
+        padding-bottom: 25px;
+        color: #7086ae;
+        font-size: 20px;
+    }
+    .el-message-box__btns {
+        button {
+            font-size: 16px;
+            color: #7086ae;
+            border-color: transparent;
+        }
+        .el-button--primary {
+            color: #FFFFFF;
+            background-color: #26B1BF;
+        }
+    }
+}
+
+// ComponentNav 组件
+.nav-menu-list {
+    background-color: #121723;
+    width: 200px;
+    border: 1px solid #07e9f1;
+    margin: 0;
+    padding: 0;
+    li {
+        color: #FFFFFF;
+        p {
+            color: #697088;
+            font-size: 12px;
+            height: 30px;
+            line-height: 30px;
+        }
+        img {
+            vertical-align: middle;
+            margin: -3px 5px 0 0;
+        }
+    }
+    .el-dropdown-menu__item--divided:before {
+        height: 0;
+    }
+    .el-dropdown-menu__item--divided {
+        border-top-color: #07e9f1;
+    }
+    .el-dropdown-menu__item:hover {
+         color: #FFFFFF;
+        background-color: #090C15;
+    }
+    .el-popper[x-placement^=bottom] {
+        padding: 0;
+        margin: 0;
+    }
+}
